@@ -1,0 +1,54 @@
+<html>
+
+<head><title>Ejemplos de enlaces habituales</title></head>
+
+<body>
+        <h2>Enlace al inicio del sitio web</h2>
+        <a href="/">Inicio</a>
+    <hr/>
+        <h2>Enlace a un email</h2>
+        <a href="mailto:nombre@direccion.com" title="Dirección de email para solicitar más información">
+            Solicita más información
+        </a>
+        <p>Al pinchar sobre el enlace anterior, se abre automáticamente el programa de correo electrónico del ordenador del usuario y se establece la dirección de envío al valor indicado después de mailto: La sintaxis es la misma que la de un enlace normal, salvo que se cambia el prefijo http:// por mailto:</p> 
+        <p>La sintaxis de mailto: permite utilizarlo para otros ejemplos más complejos:</p>
+        
+        <!-- Envío del correo electrónico a varias direcciones a la vez -->
+        <a href="mailto:nombre@direccion.com,otro_nombre@direccion.com">Solicita más información</a>
+
+        <!-- Añadir un "asunto" inicial al correo electrónico -->
+        <a href="mailto:nombre@direccion.com?subject=Solicitud de más información" >Solicita más información</a>
+
+        <!-- Añadir un texto inicial en el cuerpo del correo electrónico -->
+        <a href="mailto:nombre@direccion.com?body=Estaría interesado en solicitar más información sobre sus productos">Solicita más información</a>
+
+    <hr/>
+        <p>Todas las opciones anteriores se pueden combinar entre sí para realizar ejemplos más avanzados. Aunque el uso de mailto: puede parecer una ventaja, su uso está desaconsejado. Si se incluye una dirección de correo electrónico directamente en una página web, es muy probable que en poco tiempo esa dirección de email se encuentre llena de correo electrónico basura o "spam", ya que existen programas automáticos encargados de rastrear sistemáticamente todas las páginas web de Internet para encontrar direcciones de correo electrónico válidas.</p>
+        <p>La forma de mostrar las direcciones de correo electrónico en las páginas web consiste en incluir la dirección en una imagen o indicarla de forma que solamente los usuarios puedan entenderlo:</p>
+        
+        <p>La dirección de correo es <strong>nombre (arroba) direccion.com</strong></p>
+        <p>La dirección de correo es <strong>nombre_arroba_direccion.com</strong></p>
+        <p>La dirección de correo es <strong>nombreQUITAESTO@direccion.com</strong></p>
+        <p>La dirección de correo es <strong>nombre(ARROBA)direccion.com</strong></p>
+        <p>La dirección de correo es <strong>nombre @ direccion . com</strong></p>
+
+    <hr/>
+        <h2>Enlazar varias hojas de estilos CSS</h2>
+        <link rel="stylesheet" type="text/css" href="/css/comun.css" />
+        <link rel="stylesheet" type="text/css" href="/css/secciones.css" />
+    
+    <hr/>
+        <h2>Enlazar hojas de estilos CSS para diferentes medios</h2>
+        <link rel="stylesheet" type="text/css" href="/css/comun.css" media="screen, projection"/>
+        <link rel="stylesheet" type="text/css" href="/css/impresora.css" media="print"/>
+        <link rel="stylesheet" type="text/css" href="/css/movil.css" media="handheld"/>
+    
+    <hr/>
+        <h2>Enlazar el favicon</h2>
+        <p>El favicon o icono para favoritos es el pequeño icono que muestran las páginas en varias partes del navegador. Dependiendo del navegador que se utilice, este icono se muestra en la barra de direcciones, en la barra de título del navegador y/o en el menú de favoritos/marcadores.</p>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/ico" />
+        <p>Aunque en principio la imagen debería ser de tipo .ICO (formato gráfico de los iconos), algunos navegadores soportan favicons en otros formatos gráficos más habituales (como por ejemplo
+        .PNG).</p>
+
+</body>
+</html>
