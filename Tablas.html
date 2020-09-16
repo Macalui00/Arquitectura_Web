@@ -63,7 +63,7 @@
         </tr>
     </table>
 
-    <hr>
+    <hr/>
 
     <h2>Fusión de columnas</h2>
     
@@ -89,7 +89,7 @@
         </tr>
     </table>
         
-    <hr>
+    <hr/>
 
     <h2>Fusión de filas</h2>
     <table border="1" bgcolor="666666" cellpadding="20">
@@ -115,7 +115,7 @@
         </tr>
     </table>
         
-    <hr>
+    <hr/>
 
     <h2>Fusión de multiples columnas</h2>
     <table border="1" bgcolor="666666" cellpadding="20">
@@ -139,7 +139,7 @@
         </tr>
     </table>
     
-    <hr>
+    <hr/>
 
     <h1>Fusión de múltiples filas</h1>
 
@@ -165,7 +165,7 @@
         </tr>
     </table>
 
-    <hr>
+    <hr/>
 
     <h2>Tablas avanzadas</h2>
     <h3>Análisis de ventas</h3>
@@ -254,7 +254,41 @@
             </tr>
         </tbody>
     </table>
+
+    <h2>Uso del colorgroup</h2>
+    
+    <table summary="Análisis de ventas anuales" border="1" bgcolor="666666" cellpadding="10">
+    <caption>Análisis de ventas anuales</caption>
+    
+    <colgroup span="1" style="color:red;" />
+    <colgroup span="3" style="color:blue;" />
+    
+        <thead>
+            <tr>
+                <th scope="col" align="center" bgcolor=dddddd>AÑO</th>
+                <th scope="col" align="center" bgcolor=dddddd>Producto A</th>
+                <th scope="col" align="center" bgcolor=dddddd>Producto B</th>
+                <th scope="col" align="center" bgcolor=dddddd>Producto C</th>
+                <th scope="col" align="center" bgcolor=dddddd>Producto D</th>
+            </tr>
+        </thead>
         
+        <tbody>
+            <tr>
+                <th scope="row" align="center" bgcolor=dddddd>N-3</th><td align="center" bgcolor=dddddd>-</td><td align="center" bgcolor=dddddd>-</td><td align="center" bgcolor=dddddd>-</td><td align="center" bgcolor=dddddd>-</td>
+            </tr>
+            <tr>
+                <th scope="row" align="center" bgcolor=dddddd>N-2</th><td align="center" bgcolor=dddddd>3</td><td align="center" bgcolor=dddddd>5</td><td align="center" bgcolor=dddddd>8</td><td align="center" bgcolor=dddddd>4</td>
+            </tr>
+            <tr>
+                <th scope="row" align="center" bgcolor=dddddd>N-1</th><td align="center" bgcolor=dddddd>4</td><td align="center" bgcolor=dddddd>4</td><td align="center" bgcolor=dddddd>7</td><td align="center" bgcolor=dddddd>3</td>
+            </tr>
+            <tr>
+                <th scope="row" align="center" bgcolor=dddddd>N</th><td align="center" bgcolor=dddddd>5</td><td align="center" bgcolor=dddddd>7</td><td align="center" bgcolor=dddddd>6</td><td align="center" bgcolor=dddddd>2</td>
+            </tr>
+        </tbody>
+    </table>
+    
         
 </body>
 </html>
