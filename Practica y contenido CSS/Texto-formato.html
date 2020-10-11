@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Ejercicio posicionamiento float</title>
+    <style type="text/css">
+        #especial em {
+            font-weight: bold;
+        }
+        #especial strong {
+            font-weight: normal;
+            background-color: #FFFF66;
+            padding: 2px;
+        }
+        /*Para que las cajas de posicion de fondo y de repeticion de fondo no se coloquen una al lado de la otra:*/
+        .separado{
+            clear: both;
+            padding: 10px;
+        }
+
+        .caja1,.caja2,.caja3,.caja4{
+            float: left;
+            padding: 20px;
+            margin-left: 90px;
+            width: 200px;
+            border: 2px solid rebeccapurple;
+            background-color: plum;
+        }
+        .caja1 p{
+            text-align: left;
+        }
+        .caja2 p{
+            text-align: right;
+        }
+        .caja3 p{
+            text-align: center;
+        }
+        .caja4 p{
+            text-align: justify;
+        }
+        h2{
+            text-align: center;
+        }
+        .caja5,.caja6,.caja7,.caja8{
+            padding: 5px;
+            margin: 10px;
+            /* width: 200px; */
+            border: 2px solid rgb(71, 14, 128);
+            background-color: rgb(236, 219, 236);
+        }
+
+        .caja5 p{
+            text-transform: none;
+        }
+        .caja6 p{
+            text-transform: capitalize;
+        }
+        .caja7 p{
+            text-transform: lowercase;
+        }
+        .caja8 p{
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="separado">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut in
+            purus ac <em>libero nonummy vestibulum</em>. Nullam molestie, nunc id
+            nonummy laoreet, <strong>tortor diam mollis elit</strong>, quis hendrerit
+            libero lorem vitae nunc.</p>
+            <p id="especial">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            Ut in purus ac <em>libero nonummy vestibulum</em>. Nullam molestie, nunc id
+            nonummy laoreet, <strong>tortor diam mollis elit</strong>, quis hendrerit
+            libero lorem vitae nunc.</p>
+    </div>
+</hr>
+    <div class="separado">
+        <h2>Orientacion del texto</h2>
+        <div class="caja1"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut in
+            purus ac libero nonummy vestibulum. Nullam molestie, nunc id
+            nonummy laoreet, <strong>tortor diam mollis elit</strong>, quis hendrerit
+            libero lorem vitae nunc.
+        </p></div>
+        <div class="caja2"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut in
+            purus ac libero nonummy vestibulum. Nullam molestie, nunc id
+            nonummy laoreet, <strong>tortor diam mollis elit</strong>, quis hendrerit
+            libero lorem vitae nunc.
+        </p></div>
+        <div class="caja3"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut in
+            purus ac libero nonummy vestibulum. Nullam molestie, nunc id
+            nonummy laoreet, <strong>tortor diam mollis elit</strong>, quis hendrerit
+            libero lorem vitae nunc.
+        </p></div>
+        <div class="caja4"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut in
+            purus ac libero nonummy vestibulum. Nullam molestie, nunc id
+            nonummy laoreet, <strong>tortor diam mollis elit</strong>, quis hendrerit
+            libero lorem vitae nunc.
+        </p></div>
+    </div>
+</hr>
+<div class="separado">
+    <h2>Transformacion del texto</h2>
+    <div class="caja5">
+        <h3>Texto normal</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut in
+        purus ac libero nonummy vestibulum. Nullam molestie, nunc id
+        nonummy laoreet, <strong>tortor diam mollis elit</strong>, quis hendrerit
+        libero lorem vitae nunc.
+    </p></div>
+    <div class="caja6">
+        <h3>Capitalizado</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut in
+        purus ac libero nonummy vestibulum. Nullam molestie, nunc id
+        nonummy laoreet, <strong>tortor diam mollis elit</strong>, quis hendrerit
+        libero lorem vitae nunc.
+    </p></div>
+    <div class="caja7">
+        <h3>Lowercase</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut in
+        purus ac libero nonummy vestibulum. Nullam molestie, nunc id
+        nonummy laoreet, <strong>tortor diam mollis elit</strong>, quis hendrerit
+        libero lorem vitae nunc.
+    </p></div>
+    <div class="caja8">
+        <h3>Uppercase</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut in
+        purus ac libero nonummy vestibulum. Nullam molestie, nunc id
+        nonummy laoreet, <strong>tortor diam mollis elit</strong>, quis hendrerit
+        libero lorem vitae nunc.
+    </p></div>
+</div>
+</body>
+</html>

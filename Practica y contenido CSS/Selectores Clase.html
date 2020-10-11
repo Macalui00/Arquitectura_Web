@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Selectores de Clase</title>
+
+    <style type="text/css">
+        .destacado{color: red; font-size: 15px;}
+        /*
+        el atributo .destacado es equivalente a *.destacado, por
+        lo que todos los diseñadores obvian el símbolo * al escribir un selector de clase normal
+        */
+
+        .aviso {
+        padding: 0.5em;
+        border: 1px solid #98be10;
+        background: #f6feda;
+        }
+        .error {
+        color: #930;
+        font-weight: bold;
+        }
+        .especial{background-color: grey;}
+        p.destacado{color: greenyellow;}
+
+        /* Todos los elementos de tipo "p" con atributo class="aviso" */
+        /* p.aviso { ... } */
+
+        /* Todos los elementos con atributo class="aviso" que estén dentro de cualquier elemento de tipo "p" */
+        /*p .aviso { ... }*/
+
+        /* Todos los elementos "p" de la página y todos los elementos con
+        atributo class="aviso" de la página */
+        /* p, .aviso { ... } */
+
+    </style>
+</head>
+<body>
+    <h1>Selectores de Clase</h1>
+
+    <p class="destacado">Este es un texto de clase destacado</p>
+    <p>Nunc sed lacus et est adipiscing accumsan...<a href="#" class="destacado">Este es un link de clase destacado</a></p>
+    <p>Class aptent taciti <em class="destacado"> sociosqu </em>ad litora...</p>
+
+    <span class="error"><p>ERROR</p></span>
+    <div class="aviso"><p>AVISO</p></div>
+
+    <p>Aplicar estilos solamente al parrafo cuyo atributo class sea igual a destacado</p>
+
+    <p class="especial destacado error">
+        Por último, es posible aplicar los estilos de varias clases CSS sobre un mismo elemento.
+        La sintaxis es similar, pero los diferentes valores del atributo class se separan con
+        espacios en blanco. 
+    </p>
+</body>
+</html>

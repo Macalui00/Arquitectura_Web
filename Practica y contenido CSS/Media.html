@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Regla Media</title>
+
+    <style type="text/css">
+        @media print {
+            body { font-size: 10pt }
+        }
+        @media screen {
+            body { font-size: 13px }
+        }
+        @media screen, print {
+            body { line-height: 1.2 }
+        }
+        /*
+        El ejemplo anterior establece que el tamaño de letra de la página cuando se visualiza en
+        una pantalla debe ser 13 píxel. Sin embargo, cuando se imprimen los contenidos de la
+        página, su tamaño de letra debe ser de 10 puntos. Por último, tanto cuando la página se
+        visualiza en una pantalla como cuando se imprimen sus contenidos, el interlineado del
+        texto debe ser de 1.2 veces el tamaño de letra del texto.
+
+        */
+    </style>
+
+    <!--Otra manera de hacerlo-->
+    <!-- <style type="text/css">
+        @import url("estilos_basicos.css") screen;
+        @import url("estilos_impresora.css") print;
+    </style> -->
+
+    <!--Otra manera de hacerlo-->
+    <!-- <style type="text/css">
+        <link rel="stylesheet" type="text/css" media="screen" href="basico.css" />
+        <link rel="stylesheet" type="text/css" media="print, handheld"
+        href="especial.css" />
+    </style> -->
+
+</head>
+<body>
+    <p style="color: black; font-family: Verdana;">
+        Las reglas @media son un tipo especial de regla CSS que permiten indicar de forma
+        directa el medio o medios en los que se aplicarán los estilos incluidos en la regla. Para
+        especificar el medio en el que se aplican los estilos, se incluye su nombre después de
+        @media. Si los estilos se aplican a varios medios, se incluyen los nombres de todos los
+        medios separados por comas.
+    </p>
+</body>
+</html>

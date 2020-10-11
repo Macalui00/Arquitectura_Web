@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Selectores de Clase</title>
+
+    <style type="text/css">
+        #destacado { color: red; }
+        p#aviso{color: blue; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 15px;}
+
+        /* Todos los elementos de tipo "p" con atributo id="aviso" */
+        /* p#aviso { ... } */
+
+        /* Todos los elementos con atributo id="aviso" que estén dentro
+        de cualquier elemento de tipo "p" */
+        /* p #aviso { ... } */
+
+        /* Todos los elementos "p" de la página y todos los elementos con
+        atributo id="aviso" de la página */
+        /* p, #aviso { ... } */
+
+    </style>
+</head>
+<body>
+    <h1>Selectores de Clase</h1>
+
+    <p>Primer párrafo</p>
+    <p id="destacado">Segundo párrafo que esta destacado</p>
+    <p>Tercer párrafo</p>
+
+    <p id="aviso">Esto aplica la regla CSS solamente al elemento de tipo parrafo que tenga un atributo id igual al indicado</p>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+#estatico, #relativo, #absoluto{
+    border: 1px royalblue;
+    background-color: skyblue;
+    padding: 10px;
+    width: fit-content;
+}
+
+#fijo{
+    border: 1px royalblue;
+    background-color: skyblue;
+    padding: 10px;
+    width: 500px;
+}
+
+#estatico {
+    position: static;
+}
+
+#relativo{
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+
+#hijo{
+    position: absolute;
+    left: 20px;
+    width: fit-content;
+    background-color: slategray;
+}
+#hijo2{
+    background-color: slateblue;
+    width: 200px;
+    position: absolute;
+    top: 400px;
+}
+
+#fijo {
+    position: fixed;
+}
+
+#fijo li {
+    float: left;
+    width: fit-content;
+    padding: 10px;
+    border: solid 2px grey;
+    background-color: greenyellow;
+}
+
+#fijo ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+#cuerpo {
+    position: relative;
+    top: 50px;
+
+}
+
+#flotante h2,#flotante ul, #flotante ul li {
+    /* clear: left;
+     */
+     float: left;
+}
+
+#flotante ul li{
+    padding: 10px;
+    border: solid 2px grey;
+    background-color: greenyellow;
+    width: fit-content;
+}
+#flotante ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* #flotante {
+    clear: left;
+} */
+
+#cuerpo{
+    position: relative;
+    top:400px;
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Cajas</title>
+
+    <style type="text/css">
+
+        .caja4 p,.caja5 p,.caja6 p,.caja7 p,.caja8 p{
+            font-size: 80px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:rgb(182, 240, 211);
+            margin-left: 25%;
+            /* background-color: grey;
+            width: fit-content; */
+        }
+        .caja1,.caja2,.caja3{
+            float: left;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .caja1 {
+        background-image: url("https://cdn.icon-icons.com/icons2/131/PNG/256/apple_fruit_fruits_20616.png");
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        padding: 10px;
+        border: 1px black solid;
+        width: 250px;
+        height: 400px;
+        }
+        .caja2 {
+        background-image: url("https://cdn.icon-icons.com/icons2/131/PNG/256/apple_fruit_fruits_20616.png");
+        background-repeat: no-repeat;
+        background-position: right top;
+        padding: 10px;
+        border: 1px black solid;
+        width: 250px;
+        height: 400px;
+        }
+        .caja3 {
+        background-image: url("https://cdn.icon-icons.com/icons2/131/PNG/256/apple_fruit_fruits_20616.png");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        padding: 10px;
+        border: 1px black solid;
+        width: 250px;
+        height: 400px;
+        }
+
+        .destacado {
+            margin-left: 2em;
+            background-color: grey;
+            border: 1px black solid;
+        }
+        .relleno {
+            background-color: grey;
+            border: 1px black solid;
+            padding-top: 2em; padding-right: 2em; padding-bottom: 2em; padding-left: 2em;
+        }
+        .bordes{
+            margin: 10px;
+            padding: 10px;
+
+            /*Tamaño de bordes*/
+            border-top-width: 10px;
+            border-right-width: 1em;
+            border-bottom-width: thick;
+            border-left-width: thin;
+        
+            border: solid;
+
+            /*Color de bordes*/
+            border-top-color: #CC0000;
+            border-right-color: blue;
+            border-bottom-color: #00FF00;
+            border-left-color: #CCC;
+
+            /*Estilo de bordes*/
+            border-top-style: dashed;
+            border-right-style: double;
+            border-bottom-style: dotted;
+            border-left-style: solid;
+
+        }
+
+        .p1 { border-width: thin; border: groove; } /* thin thin thin thin */
+        .p2 { border-width: thin thick; border: ridge; } /* thin thick thin thick */
+        .p3 { border-width: thin thick medium; border:  inset; } /* thin thick medium thick */
+        .p4 { border-width: thin thick medium thin; border:  outset; } /* thin thick medium thin */
+
+        /*Para que las cajas de posicion de fondo y de repeticion de fondo no se coloquen una al lado de la otra:*/
+        .separado{
+            clear: both;
+            padding: 10px;
+        }
+
+        .caja4,.caja5,.caja6,.caja7,.caja8{
+            float: left;
+            padding: 10px;
+            margin: 10px;
+        }
+        .caja4 {
+        background-image: url("https://static.vecteezy.com/system/resources/previews/000/652/836/non_2x/vase-with-flowers-icon-vector.jpg");
+        background-repeat: repeat;
+        padding: 10px;
+        border: 2px grey solid;
+        width: 1000px;
+        height: 1000px;
+        }
+        .caja5 {
+        background-image: url("https://static.vecteezy.com/system/resources/previews/000/652/836/non_2x/vase-with-flowers-icon-vector.jpg");
+        background-repeat: repeat-x;
+        padding: 10px;
+        border: 2px grey solid;
+        width: 1000px;
+        height: 1000px;
+        }
+        .caja6 {
+            background-image: url("https://static.vecteezy.com/system/resources/previews/000/652/836/non_2x/vase-with-flowers-icon-vector.jpg");
+        background-repeat: repeat-y;
+        padding: 10px;
+        border: 2px grey solid;
+        width: 1000px;
+        height: 1000px;
+        }
+        .caja7 {
+            background-image: url("https://static.vecteezy.com/system/resources/previews/000/652/836/non_2x/vase-with-flowers-icon-vector.jpg");
+        background-repeat: no-repeat;
+        padding: 10px;
+        border: 2px grey solid;
+        width: 1000px;
+        height: 1000px;
+        }
+        .caja8 {
+            background-image: url("https://static.vecteezy.com/system/resources/previews/000/652/836/non_2x/vase-with-flowers-icon-vector.jpg");
+        background-repeat: inherit;
+        padding: 10px;
+        border: 2px grey solid;
+        width: 1000px;
+        height: 1000px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <h2>Caso 1</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam et elit.
+            Vivamus placerat lorem. Maecenas sapien. Integer ut massa. Cras diam ipsum,
+            laoreet non, tincidunt a, viverra sed, tortor.</p>
+        <p class="destacado">Vestibulum lectus diam, luctus vel, venenatis ultrices,
+                cursus vel, tellus. Etiam placerat erat non sem. Nulla molestie odio non
+                nisl tincidunt faucibus.</p>
+        <p>Aliquam euismod sapien eu libero. Ut tempor orci at nulla. Nam in eros
+                egestas massa vehicula nonummy. Morbi posuere, nibh ultricies consectetuer
+                tincidunt,
+                risus turpis laoreet elit, ut tincidunt risus sem et nunc.</p>
+    </div>
+    <div class="relleno">
+        <p >HOLA, esto tiene padding</p>
+    </div>
+    <div class="bordes">
+        <p >Anchura de bordes diferentes</p>
+        <p class="p1">Otra manera de esto de los bordes (thin) y style groove</p>
+        <p class="p2">Otra manera de esto de los bordes (thin thick) y style ridge</p>
+        <p class="p3">Otra manera de esto de los bordes (thin thick medium) y style inset</p>
+        <p class="p4">Otra manera de esto de los bordes (thin thick medium thin) y style outset</p>
+    </div>
+    <div class="contenedor">
+    <div class="separado">
+        <h2>Posicion del fondo</h2>
+        <div class="caja1">CAJA 1</div>
+        <div class="caja2">CAJA 2</div>
+        <div class="caja3">CAJA 3</div>
+    </div>
+</br>
+    <div class="separado">
+        <h2>Repetición o no del fondo</h2>
+        <div class="caja4"><p>Repetir fondo</p></div>
+        <div class="caja5"><p>Repetir fondo eje x</p></div>
+        <div class="caja6"><p>Repetir fondo eje y</p></div>
+        <div class="caja7"><p>Fondo sin repetir</p></div>
+        <div class="caja8"><p>Fondo inherit</p></div>
+    </div> 
+
+    </div>
+</body>
+</html>

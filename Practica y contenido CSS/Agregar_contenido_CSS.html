@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Ejemplo de estilos sin CSS</title>
+
+    <!--Manera número 2-->
+    <style type="text/css">
+        #titulo_1 { color: red; font-family: Arial; font-size: large; }
+        #parrafo_1 { color: gray; font-family: Verdana; font-size: medium; }
+    </style>
+
+    <!--Manera número 3-->
+    <link rel="stylesheet" type="text/css" href="estilos-contenido.css" media="screen" />    
+
+    <!--Otra manera:
+    <style type="text/css" media="screen">
+        @import 'estilos-contenido.css';
+    </style>
+
+
+    Estas diferentes maneras de acceder a la hoja de estilos son equivalentes:
+        @import '/css/estilos.css';
+        @import "/css/estilos.css";
+        @import url('/css/estilos.css');
+        @import url("/css/estilos.css");
+    -->
+</head>
+<body>
+    <!--Manera número 1-->
+    <h1><font color="red" face="Arial" size="5">Titular de la página</font></h1>
+    <p><font color="gray" face="Verdana" size="2">
+        Un párrafo de texto no muy largo.</font>
+    </p>
+
+    </hr>
+    <!--Manera número 2-->
+    <h1 id="titulo_1">Titular de la página</h1>
+    <p id="parrafo_1">Un párrafo de texto no muy largo.</p>
+
+    </hr>
+    <!--Manera número 3-->
+    <p id="parrafo_2">Un párrafo de texto.</p>
+
+</body>
+</html>

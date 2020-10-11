@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Selectores</title>
+
+    <style type="text/css">
+        p span { color: red; }
+        p a {color: red;}
+        p * a{color: orange;}
+    </style>
+</head>
+<body>
+    <h1>Selectores</h1>
+    <h2>Selector Universal</h2>
+    <p>
+        * {
+            margin: 0;
+            padding: 0;
+            }
+    </p>
+
+    </hr>
+    <h2>Selector de tipo o etiqueta</h2>
+    <p>
+        h1 {
+            color: #8A8E27;
+            font-weight: normal;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        <br>
+        h2 {
+            color: #8A8E27;
+            font-weight: normal;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        <br>
+        h3 {
+            color: #8A8E27;
+            font-weight: normal;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        <br>
+        ---------------------------------------------------------
+        <br>
+        h1, h2, h3 {
+            color: #8A8E27;
+            font-weight: normal;
+            font-family: Arial, Helvetica, sans-serif;
+        }        
+
+    </p>
+
+    </hr>
+    <h2>Selector Descendente</h2>
+    <p>
+        ...
+        <span>texto1</span>
+        ...
+        <a href="#">...<span>texto2</span></a>
+        ...
+    </p>
+
+    <p>
+        El selector p span selecciona tanto texto1 como texto2. El motivo es que en el selector
+        descendente, un elemento no tiene que ser "hijo directo" de otro. La única condición es
+        que un elemento debe estar dentro de otro elemento, sin importar lo profundo que se
+        encuentre.
+        <br>
+        Al resto de elementos span de la página que no están dentro de un elemento p, no se
+        les aplica la regla CSS anterior.
+        Los selectores descendentes permiten mejorar la precisión del selector de tipo o
+        etiqueta. Así, utilizando el selector descendente es posible aplicar diferentes estilos a los
+        elementos del mismo tipo.
+    </p>
+
+    <p>
+        /* El estilo se aplica a todos los elementos "p", "a", "span" y "em" */
+        <br>
+        p, a, span, em { text-decoration: underline; }
+        <br>
+        /* El estilo se aplica solo a los elementos "em" que se
+        encuentran dentro de "p a span" */
+        <br>
+        p a span em { text-decoration: underline; }
+    </p>
+        
+    <p><a href="#">Enlace</a></p>
+    <p><span><a href="#">Enlace</a></span></p>
+
+</body>
+</html>
