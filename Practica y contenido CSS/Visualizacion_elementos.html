@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Visibilizacion de elementos</title>
+
+    <style type="text/css">
+
+        .caja1,.caja2,.caja3,.caja4{
+            float: left;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .caja1 {
+        background-image: url("https://cdn.icon-icons.com/icons2/131/PNG/256/apple_fruit_fruits_20616.png");
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        padding: 10px;
+        border: 1px black solid;
+        width: 250px;
+        height: 400px;
+        visibility: hidden;
+        }
+        .caja2 {
+        background-image: url("https://cdn.icon-icons.com/icons2/131/PNG/256/apple_fruit_fruits_20616.png");
+        background-repeat: no-repeat;
+        background-position: right top;
+        padding: 10px;
+        border: 1px black solid;
+        width: 250px;
+        height: 400px;
+        }
+        .caja3 {
+        background-image: url("https://cdn.icon-icons.com/icons2/131/PNG/256/apple_fruit_fruits_20616.png");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        padding: 10px;
+        border: 1px black solid;
+        width: 250px;
+        height: 400px;
+        }
+        .caja4 {
+        background-image: url("https://cdn.icon-icons.com/icons2/131/PNG/256/apple_fruit_fruits_20616.png");
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        padding: 10px;
+        border: 1px black solid;
+        width: 250px;
+        height: 400px;
+        display: none;
+        }
+
+
+        /*Para que las cajas de posicion de fondo y de repeticion de fondo no se coloquen una al lado de la otra:*/
+        .separado{
+            clear: both;
+            padding: 10px;
+        }
+        .caja{
+            border: 1px black solid;
+            padding: 10px;
+            margin: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="separado">
+        <h2>Propiedad Visibility Hidden</h2>
+        <div class="caja1">CAJA 1</div>
+        <div class="caja2">CAJA 2</div>
+        <div class="caja3">CAJA 3</div>
+    </div>
+
+    <div class="separado">
+        <h2>Propiedad Display None</h2>
+        <div class="caja2">CAJA 1</div>
+        <div class="caja4">CAJA 2</div>
+        <div class="caja3">CAJA 3</div>
+    </div>
+
+    <div class= "separado">
+    <div class= "caja">DIV normal</div>
+</br>
+    <div class= "caja" style="display:inline">DIV con display:inline</div>
+
+    <a class= "caja" href="#">Enlace normal</a>
+
+    <a class= "caja" href="#" style="display:block">Enlace con display:block</a>
+</div>
+</body>
+</html>

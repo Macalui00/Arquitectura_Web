@@ -3,8 +3,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-    <title>Ejercicio posicionamiento float</title>
+    <title>Texto - formatot</title>
     <style type="text/css">
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(215, 192, 236, 0.301);
+        }
         #especial em {
             font-weight: bold;
         }
@@ -23,9 +27,10 @@
             float: left;
             padding: 20px;
             margin-left: 90px;
+            margin-bottom: 10px;
             width: 200px;
-            border: 2px solid rebeccapurple;
-            background-color: plum;
+            border: 2px solid rgb(32, 18, 46);
+            background-color: rgba(243, 190, 243, 0.5);
         }
         .caja1 p{
             text-align: left;
@@ -46,8 +51,8 @@
             padding: 5px;
             margin: 10px;
             /* width: 200px; */
-            border: 2px solid rgb(71, 14, 128);
-            background-color: rgb(236, 219, 236);
+            border: 2px solid rgb(29, 8, 51);
+            background-color: rgba(236, 219, 236, 0.678);
         }
 
         .caja5 p{
@@ -62,6 +67,19 @@
         .caja8 p{
             text-transform: uppercase;
         }
+        .caja9,.caja10,.caja11{
+            float: left;
+            padding: 20px;
+            margin-left: 90px;
+            margin-bottom: 10px;
+            width: 200px;
+            border: 2px solid rgb(32, 18, 46);
+            background-color: rgba(243, 190, 243, 0.5);
+        }
+        .caja9 p{ line-height: 1.2 }
+        .caja10 p{ line-height: 1.2em}
+        .caja11 p{ line-height: 120%}
+        
     </style>
 </head>
 <body>
@@ -131,6 +149,97 @@
         nonummy laoreet, <strong>tortor diam mollis elit</strong>, quis hendrerit
         libero lorem vitae nunc.
     </p></div>
+</div>
+</hr>
+    <div class="separado">
+        <h2>Indentacion del texto</h2>
+        <div class="caja9">
+            <p id="par1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut in
+            purus ac libero nonummy vestibulum. Nullam molestie, nunc id
+            nonummy laoreet, <strong>tortor diam mollis elit</strong>, quis hendrerit
+            libero lorem vitae nunc.
+            </p>
+        </div>
+        <div class="caja10">
+            <p id="par2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut in
+            purus ac libero nonummy vestibulum. Nullam molestie, nunc id
+            nonummy laoreet, tortor diam mollis elit, quis hendrerit
+            libero lorem vitae nunc.
+            </p>
+        </div>
+        <div class="caja11">
+            <p id="par3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut in
+            purus ac libero nonummy vestibulum. Nullam molestie, nunc id
+            nonummy laoreet, <strong>tortor diam mollis elit</strong>, quis hendrerit
+            libero lorem vitae nunc.
+            </p>
+        </div>
+    </div>
+</hr>
+<div class="separado">
+    <h2>Indentacion del texto</h2>
+    
+    <div style="text-indent: 0; border: 1px solid black; padding: 10px; margin-bottom: 10px;">
+        <h3>text-indent: 0</h3>
+        <p id="par1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut in
+        purus ac libero nonummy vestibulum. Nullam molestie, nunc id
+        nonummy laoreet, <strong>tortor diam mollis elit</strong>, quis hendrerit
+        libero lorem vitae nunc.
+        </p>
+    </div>
+    
+    <div style="text-indent: 2em; border: 1px solid black; padding: 10px;">
+       <h3>text-indent: 2em</h3>
+       <p id="par2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut in
+        purus ac libero nonummy vestibulum. Nullam molestie, nunc id
+        nonummy laoreet, tortor diam mollis elit, quis hendrerit
+        libero lorem vitae nunc.
+        </p>
+    </div>
+</div>
+</hr>
+<div class="separado">
+    <h2>White-space</h2>
+    <div style="White-space: normal; border: 1px solid black; padding: 10px; margin-bottom: 10px; width: fit-content;">
+        <h3>White-space: normal</h3>
+        <p id="par1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut in
+        purus ac libero nonummy vestibulum. Nullam molestie, nunc id
+        nonummy laoreet, <strong>tortor diam mollis elit</strong>, quis hendrerit
+        libero lorem vitae nunc.
+        </p>
+    </div>
+    <div style="White-space: pre; border: 1px solid black; padding: 10px; margin-bottom: 10px; width: fit-content;">
+        <h3>White-space: pre</h3>
+        <p id="par1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut in
+        purus ac libero nonummy vestibulum. Nullam molestie, nunc id
+        nonummy laoreet, <strong>tortor diam mollis elit</strong>, quis hendrerit
+        libero lorem vitae nunc.
+        </p>
+    </div>
+    <div style="White-space: nowrap; border: 1px solid black; padding: 10px; margin-bottom: 10px; width: fit-content;">
+        <h3>White-space: nowrap</h3>
+        <p id="par1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut in
+        purus ac libero nonummy vestibulum. Nullam molestie, nunc id
+        nonummy laoreet, <strong>tortor diam mollis elit</strong>, quis hendrerit
+        libero lorem vitae nunc.
+        </p>
+    </div>
+    <div style="White-space: pre-wrap; border: 1px solid black; padding: 10px; margin-bottom: 10px; width: fit-content;">
+        <h3>White-space: pre-wrap</h3>
+        <p id="par1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut in
+        purus ac libero nonummy vestibulum. Nullam molestie, nunc id
+        nonummy laoreet, <strong>tortor diam mollis elit</strong>, quis hendrerit
+        libero lorem vitae nunc.
+        </p>
+    </div>
+    <div style="White-space: pre-line; border: 1px solid black; padding: 10px; margin-bottom: 10px; width: fit-content;">
+        <h3>White-space: pre-line</h3>
+        <p id="par1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut in
+        purus ac libero nonummy vestibulum. Nullam molestie, nunc id
+        nonummy laoreet, <strong>tortor diam mollis elit</strong>, quis hendrerit
+        libero lorem vitae nunc.
+        </p>
+    </div>
 </div>
 </body>
 </html>

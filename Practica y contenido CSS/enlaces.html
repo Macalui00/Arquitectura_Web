@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Enlaces</title>
+    <style type="text/css">
+        .alternativo,.simple,.importante,.raro { display: block;} 
+        .alternativo {color: #CC0000;}
+        .simple {text-decoration: none;}
+        .importante {font-weight: bold; font-size: 1.3em;}
+        .raro {text-decoration:overline;}
+
+        .link :link{
+            color: chartreuse;
+        }
+        .visited :visited{
+            color: coral;
+        }
+        .hover :hover{
+            color:cyan;
+        }
+        .active :active{
+            color:fuchsia;
+        }
+
+        .simple,.color,.ancho,.separado,.discontinuo { margin: 1em 0; float: left; clear: left; text-decoration: none;}
+        .simple {text-decoration: underline;}
+        .color { border-bottom: medium solid #CC0000;}
+        .ancho {border-bottom: thick solid;}
+        .separado {border-bottom: 1px solid; padding-bottom: .6em;}
+        .discontinuo {border-bottom: thin dashed;}
+
+        a.boton {
+        text-decoration: none;
+        background: #EEE;
+        color: #222;
+        border: 1px outset #CCC;
+        padding: .1em .5em;
+        }
+        a.boton:hover {
+        background: #CCB;
+        }
+        a.boton:active {
+        border: 1px inset #000;
+        }
+        /*Para que las cajas de posicion de fondo y de repeticion de fondo no se coloquen una al lado de la otra:*/
+        .separado{
+            clear: both;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+        <a href="#">Enlace con el estilo por defecto</a>
+    </br>
+        <a class="alternativo" href="#">Enlace de color rojo</a>
+    </br>
+        <a class="simple" href="#">Enlace sin subrayado</a>
+    </br>
+        <a class="importante" href="#">Enlace muy importante</a>
+    </br>    
+        <a class="raro" href="#">Enlace con overline</a>
+    
+
+
+</hr>
+    <div class="separado">
+        <h2>Pseudo-clases</h2>
+        <a class="link" href="#">Enlace :link</a>
+        <p>Aplica estilos a los enlaces que apuntan a páginas o recursos que aún no
+            han sido visitados por el usuario.</p>
+        <a class="visited" href="#">Enlace :visited</a>
+        <p>Aplica estilos a los enlaces que apuntan a recursos que han sido
+            visitados anteriormente por el usuario. El historial de enlaces visitados se borra
+            automáticamente cada cierto tiempo y el usuario también puede borrarlo
+            manualmente.</p>
+        <a class="hover" href="#">Enlace :hover</a>
+        <p>Aplica estilos al enlace sobre el que el usuario ha posicionado el puntero
+            del ratón.</p>
+        <a class="active" href="#">Enlace :active</a>
+        <p>Aplica estilos al enlace que está pinchando el usuario. Los estilos sólo se
+            aplican desde que el usuario pincha el botón del ratón hasta que lo suelta, por lo
+            que suelen ser unas pocas décimas de segundo.</p>        
+    </div>
+
+
+    </hr>
+    <div class="separado">
+        <h2>Decoracion personalizada</h2>
+        <a class="simple" href="#">Enlace con el estilo por defecto</a>
+        <a class="color" href="#">Enlace un subrayado de otro color</a>
+        <a class="ancho" href="#">Enlace con un subrayado muy ancho</a>
+        <a class="separado" href="#">Enlace con un subrayado muy separado</a>
+        <a class="discontinuo" href="#">Enlace con un subrayado discontinuo</a>
+    </div>
+
+
+
+</hr>
+
+    <div class="separado">
+        <h2>Enlaces como si fueran botones</h2>
+        <a class="boton" href="#">Guardar</a>
+        <a class="boton" href="#">Enviar</a>
+    </div>
+
+
+</body>
+</html>
