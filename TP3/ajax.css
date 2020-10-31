@@ -1,0 +1,43 @@
+body { font: 13px Arial, Helvetica, sans-serif; background-color: darkseagreen;}
+h1, h2 {
+	color:#007367;
+	margin-bottom:"10px";
+}
+h1 { font-size: 2em;  }
+h2 { font-size: 1.2em;  }
+#recurso, #enviar {
+	padding: .3em;
+	font-size: 1.2em;
+	background-color: rgb(139, 199, 139);
+}
+#principal {
+	float: left;
+	width: 70%;
+}
+#secundario {
+	float: right;
+	width: 25%;
+}
+#contenidos, #cabeceras {
+    border: 2px solid rgb(159, 170, 149);
+    background: rgb(166, 202, 166);
+    padding: 1em;
+	white-space: pre;
+}
+#estados,#codigo {
+    border: 2px solid rgb(159, 170, 149);
+    background: rgb(166, 202, 166);
+    padding: 1em;
+
+}
+#contenidos {
+    min-height: 400px;
+    max-height: 600px;
+    overflow: scroll;
+}
+#estados { min-height: 50px; font-size: 1.5em;}
+#cabeceras { min-height: 100px; }
+#codigo {
+	min-height: 100px;
+	font-size: 1.5em;
+}

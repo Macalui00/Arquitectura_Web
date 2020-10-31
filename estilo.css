@@ -1,0 +1,138 @@
+body{
+    font-family: sans-serif;
+    background-color: rgb(10, 10, 10);
+    color: rgb(252, 249, 245);
+}
+
+h2,h1,h3{
+    text-align: center;
+}
+
+img,iframe,.filmo, #publicacion{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Elen{
+    margin-left: 25%;
+}
+
+p{
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+    width: fit-content; 
+}
+
+#contenedor {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(43, 43, 43, 0.418);
+}
+
+#columna1 {
+    float: left;
+    display: fixed;
+    width: 30%;
+    height: 99%;
+}
+
+#desplazar{
+    position: fixed;
+}
+
+#columna2 {
+    float: left;
+    width: 69.7%;
+    height: 100%;
+    background-color:rgba(43, 43, 43, 0.418);
+    border-left: 1px solid rgb(0, 0, 0);
+}
+#pie {
+    clear: both;
+    width: 99.9%;
+    height: 70px;
+    background-color: rgba(65, 65, 65, 0.432);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+/*menu vertical*/
+ul.menu{
+    margin: 32px;
+}  
+ul.menu li{
+list-style-type:none;
+position:relative;
+width:120px;
+}
+            
+ul.menu li a{
+text-decoration:none;
+display:inline-block;
+padding:5px 10px;
+width:120px;
+height:30px;
+border:1px solid #000;
+color:#fff;
+background-color:#000;
+}
+        
+ul.menu li a:hover{
+color:#000;
+background-color:#fff;
+            
+}
+
+ul.menu li ul{
+    display:none;
+    position:absolute;
+    top:0px;
+    left:120px;
+}
+        
+ul.menu li:hover ul{display:block;}
+
+/*Filmografia*/     
+ul.filmo{
+    list-style-type:none;
+    background-color: rgba(85, 84, 84, 0.541);
+    width: 50%;
+    padding: 10px;
+    font-size: 1.1em;
+}
+ul.filmo ul li ul li{
+    list-style-type: disc;
+}
+ul.menu2 {
+    font-size: 1em;
+    list-style: none;
+    margin-top: 0;
+}
+ul.menu2 li{
+    float: left;
+    padding: 10px;
+    margin:10px;
+}
+ul.menu2 li a{
+    text-decoration: none;
+    color: white;
+}
+ul.menu2 li a:hover {
+    color: black;
+}
+
+/*Contenido del pie*/
+
+#tituloredes,#menuredes{
+    float: left;
+}
+#tituloredes{
+    margin-left: 10px;
+}
+#contenidopie{
+    display: block;
+    margin-top: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
