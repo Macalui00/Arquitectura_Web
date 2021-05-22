@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Menu Sencillo</title>
+
+    <style type="text/css">
+        h2,h1,h3{
+            font-family: sans-serif;
+            text-align: center;
+        }
+        img{
+            margin: 5px;
+            /* margin-left: 170px; */
+        }
+        p{
+            margin: 10px;
+            padding: 10px;
+            font-family: sans-serif;
+            text-align: justify;
+            width: fit-content; 
+        }
+        #contenedor {
+            width: 700px;
+            height: 700px;
+            background-color: darkseagreen;
+        }
+        #cabecera {
+            width: 699px;
+            height: 100px;
+            background-color: rgb(237, 250, 117);
+            border: 1px solid black;
+        }
+        #menu {
+            float: left;
+            width: 150px;
+            height: 500px;
+            background-color: rgb(229, 240, 78);
+            border: 1px solid black;
+        }
+        #contenido {
+            float: left;
+            width: 546px;
+            height: 500px;
+            background-color: rgb(216, 219, 25);
+            border: 1px solid rgb(0, 0, 0);
+        }
+        #contenido #principal {
+            float: left;
+            width: 290px;
+        }
+        #contenido #secundario {
+            float: left;
+            width: 200px;
+            padding: 0px;
+        }
+        #pie {
+            clear: both;
+            width: 699px;
+            height: 100px;
+            background-color: rgb(188, 190, 30);
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+        /*MENU VERTICAL*/
+        /*Definir la anchura del menú:*/
+        ul.menu { width: 180px; }
+        
+        /*Eliminar las viñetas automáticas y todos los márgenes y espaciados aplicados por
+        defecto:*/
+        ul.menu {
+            width: 100px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /*Darle color y bordes al menu*/
+        ul.menu {
+            width: 100px;
+            list-style: none;
+            margin-left: 20px;
+            padding: 0;
+            border: 1px solid grey;
+            border-bottom: none;
+        }
+        ul.menu li {
+            border-bottom: 1px solid grey;
+            border-top: 1px solid grey;
+            background: #d7eb7d;
+            width: 100px;
+        }
+
+        /*Darle estilo a los enlaces*/
+        ul.menu li a {
+            padding: .2em 0 .2em .5em;
+            display: block;
+            text-decoration: none;
+            color: #333;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div id="contenedor">
+        <div id="cabecera">
+            <h2>Cabecera</h2>
+        </div>
+        <div id="menu">
+            <h2>Menu</h2>
+            <ul class="menu">
+                <li><a href="#" title="Enlace genérico">Elemento 1</a></li>
+                <li><a href="#" title="Enlace genérico">Elemento 2</a></li>
+                <li><a href="#" title="Enlace genérico">Elemento 3</a></li>
+                <li><a href="#" title="Enlace genérico">Elemento 4</a></li>
+                <li><a href="#" title="Enlace genérico">Elemento 5</a></li>
+                <li><a href="#" title="Enlace genérico">Elemento 6</a></li>
+            </ul>
+        </div>
+        <div id="contenido">
+            <h2>Contenido</h2>
+            <div id="principal">
+                <h3>Contenido principal</h3>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+            
+            <div id="secundario">
+                <h3>Contenido secundario</h3>
+                <img src="https://image.freepik.com/vector-gratis/blog-tecnologia-diseno-grafico-ilustracion-vectorial-eps10_24911-20566.jpg" width="200px" height="200px">
+                <p>Esto es un texto de demostracion</p>
+            </div>
+        </div>
+        <div id="pie">
+            <p>Direccion: Av. Gallardo 231</p>
+            <p>Telefono: 7162-2134</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Ejemplo de AJAX</title>
+        <script type="text/javascript">
+            function muestraMensaje() {
+                alert('Gracias por pinchar');
+            }
+
+            function resalta(elemento) {
+                switch(elemento.style.borderColor) {
+                    case 'pink':
+                    case 'pink pink pink pink':
+                    case '#c0c0c0':
+                    elemento.style.borderColor = 'black';
+                    break;
+                    case 'black':
+                    case 'black black black black':
+                    case '#000000':
+                    elemento.style.borderColor = 'pink';
+                    break;
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <h2>Onclick</h2>
+        <input type="button" value="Pinchame y verás" onclick="alert('Gracias por pinchar');" />
+        <h2>Onblur</h2>
+        <input type="button" value="Deseleccioname y verás" onblur="alert('Gracias por deseleccionar');" />
+
+        <h2>Ondblclick</h2>
+        <input type="button" value="Cliqueame dos veces y verás" ondblclick="alert('Gracias por cliquear dos veces');" />
+
+        <h2>Otra version de onclick</h2>
+        <input type="button" value="Pinchame y verás" onclick="muestraMensaje()" />
+        <h2>Version de resaltado de elemento</h2>
+        <div style="padding: .2em; width: 150px; height: 60px; border: thin solid pink"
+        onmouseover="resalta(this)" onmouseout="resalta(this)">
+            Sección de contenidos...
+        </div>
+    </body>
+</html>

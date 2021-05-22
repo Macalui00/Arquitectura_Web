@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Menu Sencillo</title>
+
+    <style type="text/css">
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: brown;
+            background-color: rgb(236, 126, 126);
+        }
+
+        /*MENU VERTICAL*/
+        /*Definir la anchura del menú:*/
+        ul.menu { width: 180px; }
+        
+        /*Eliminar las viñetas automáticas y todos los márgenes y espaciados aplicados por
+        defecto:*/
+        ul.menu {
+            width: 180px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /*Darle color y bordes al menu*/
+        ul.menu {
+            width: 180px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            border: 1px solid #7C7C7C;
+            border-bottom: none;
+        }
+        ul.menu li {
+            border-bottom: 1px solid #7C7C7C;
+            border-top: 1px solid rgb(148, 80, 80);
+            background: #d88282;
+        }
+
+        /*Darle estilo a los enlaces*/
+        ul.menu li a {
+            padding: .2em 0 .2em .5em;
+            display: block;
+            text-decoration: none;
+            color: #333;
+        }
+
+        /*MENU HORIZONTAL*/
+
+        /*Eliminar la anchura y el borde del elemento <ul> y aplicar las propiedades float y
+        clear:*/
+        ul.menu2 {
+            clear: both;
+            float: left;
+            width: 100%;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /*La clave de la transformación reside en modificar la propiedad float de los
+        elementos <li> del menú:*/
+        ul.menu2 li {
+            float: left;
+        }
+
+        /*Modificar el padding y los bordes de los enlaces que forman el menú:*/
+        ul.menu2 li a {
+            padding: .3em;
+            display: block;
+            text-decoration: none;
+            color: #333;
+            background: #5664b3;
+            border-top: 1px solid #7C7C7C;
+            border-right: 1px solid #7C7C7C;
+            border-bottom: 1px solid #9C9C9C;
+        }
+
+        /*Por último, se añade un borde izquierdo en el elemento <ul> para homogeneizar el
+        aspecto de los elementos del menú:*/
+        ul.menu2 {
+            clear: both;
+            float: left;
+            width: 100%;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            border-left: 1px solid #7C7C7C;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <h2>Menu Vertical</h2>
+    <ul class="menu">
+        <li><a href="#" title="Enlace genérico">Elemento 1</a></li>
+        <li><a href="#" title="Enlace genérico">Elemento 2</a></li>
+        <li><a href="#" title="Enlace genérico">Elemento 3</a></li>
+        <li><a href="#" title="Enlace genérico">Elemento 4</a></li>
+        <li><a href="#" title="Enlace genérico">Elemento 5</a></li>
+        <li><a href="#" title="Enlace genérico">Elemento 6</a></li>
+    </ul>
+
+    <h2>Menu Horizontal</h2>
+    <ul class="menu2">
+        <li><a href="#" title="Enlace genérico">Elemento 1</a></li>
+        <li><a href="#" title="Enlace genérico">Elemento 2</a></li>
+        <li><a href="#" title="Enlace genérico">Elemento 3</a></li>
+        <li><a href="#" title="Enlace genérico">Elemento 4</a></li>
+        <li><a href="#" title="Enlace genérico">Elemento 5</a></li>
+        <li><a href="#" title="Enlace genérico">Elemento 6</a></li>
+    </ul>
+</body>
+</html>
